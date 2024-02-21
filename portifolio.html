@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+    <header class="header">
+        <nav class="navbar nav-1">
+      
+         <section class="flex">
+             <a herf="index.html" class="logo"><i class="fa fa-gavel" style="font-size:48px;color:red"></i>
+            </i>MyScrapyard</a>
+             <ul>
+                 <li><a href="advicer.html">Advicer<i class="fas fa-paper-plane"></i></a></li>
+             </ul>
+      
+         </section>
+      </nav>
+      
+      <nav class="navbar nav-2">
+         <section class="flex">
+             <div id="menu-btn" class="fas fa-bars"></div>
+      
+             <div class="menu">
+              <ul>
+                 <li><a herf="#">Buy<i class="fas fa-angle-down"></i></a>
+                      <ul>
+      
+                 <li><a href="index.html">Home</a></li>
+                 <li><a href="listings.html">Listings</a></li>
+                 <li><a href="view_property.html">Veiw-Materials</a></li>
+              </ul>
+              </li>
+      
+              <li><a herf="#">Sell<i class="fas fa-angle-down"></i></a>
+                 <ul>
+                     
+                 <li><a href="search.html">Search Scarp</a></li>
+                 <li><a href="sell.html">Sell Items</a></li>
+                 <li><a href="budget.html">Budget Tracking</a></li>
+                 <li><a href="dashboard.html">Dashboard</a></li>
+            
+            
+         </ul>
+         </li>
+      
+      
+         <li><a herf="#">Help<i class="fas fa-angle-down"></i></a>
+             <ul>
+       
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="contact.html#fqa">FAQ</a></li>
+                  
+              <li><a href="enquri.html">Enquire Form</a></li>
+              <li><a href="portifolio.html">Testimonial</a></li>
+              <li><a href="portifolio.html">Blogs</a></li>
+         
+             
+      <!-----
+        <li><a href="#">Material</a></li>
+        <li><a href="#">Shop</a></li>
+      </ul>
+      </li>-->
+      
+      
+              </ul>
+             </div>
+
+           
+        </li>
+
+
+      
+            <ul>
+                 <li><a href="search.html">Saved <i class="far fa-heart"></i></a></li>
+                 <li><a href="login.html">Account <i class="fas fa-angle-down"></i></a>
+               <ul>
+                 <li><a href="login.html">Login</a></li>
+                 <li><a href="register.html">Register</a></li>
+      
+               </ul>  
+                 </li>
+             </ul>
+           
+      
+         </section>
+      </nav>
+      
+      
+      </header>
+
+      
+<div class="home">
+                
+        
+
+    <div class="w3-content w3-section" style="max-width:1500px">
+        <img class="mySlides" src="./image/cerative tyer 2.webp" style="width: 2000px; height:500px;">
+
+        <img class="mySlides" src="./image/creative bottle 6.jpg" style="width: 2000px; height:500px;">
+
+            <img class="mySlides" src="./image/cerative 3.jpg" style="width: 2000px; height:500px;">
+            <img class="mySlides" src="./image/creative wood 2.jpg" style="width: 2000px; height:500px;">
+            <img class="mySlides" src="./image/creative cloths.jpg" style="width: 2000px; height:500px;">
+
+       
+        
+        
+
+     
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+      
+    <section class="container testimonials_container mySwiper">
+
+       
+
+
+<style>
+
+:root{
+    --main-color:#DA2C32;
+    --light-color:#666;
+    --light-bg:#eee;
+    --white:#fff;
+    --black:#303030;
+    --border:.1rem soild var(--light-color);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+    
+            
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    line-height:1.7;
+    color: var(--color-white);
+    background: var(--color-bg); 
+    background-size: 100%;
+    background-image: url(./image/Environment_ScrapYard.jpg);
+    
+}
+
+
+/*-------------------------sliding-----------------------*/
+
+
+
+.testimonials_container {
+    overflow-x: hidden;
+    position: relative;
+    margin-bottom: 5rem}
+
+.testimonial {
+    padding-top: 2rem;
+}
+
+.avatar {
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 1rem;
+    border: 1rem solid var(--white);
+}
+
+.testimonial_info {
+    text-align: center;
+}
+
+.testimonial_body {
+    background: var(--light-bg);
+    padding: 2rem;
+    margin-top: 3rem;
+    position: relative;
+}
+
+.testimonial_body::before {
+    content: "";
+    display: block;
+    background:linear-gradient(-135deg, transparent, var(--light-bg), var(--light-bg), var(--light-bg));
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    left: 50%;
+    top: -1.5rem;
+    transform: rotate(45deg);
+}
+
+
+    
+
+    
+
+    @keyframes animateNavItems {
+        0% {
+            transform: rotateZ('-90deg');
+        }
+        100% {
+            transform: rotateZ('0');
+            opacity: 1;
+        }
+        
+    }
+
+    
+    
+    
+
+    @media screen and (max-width: 600px) {
+        
+
+    .testimonial_body {
+        padding: 1.2rem;
+    }
+
+    
+    
+
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+
+
+        <h2 style="size: xxx large;"> Testimonial</h2>
+        <div class="swiper-wrapper">
+            <article class="testimonials swiper-slide">
+                <div class="avatar">
+                    <img src="./image/1.jpeg">
+                </div>
+                <div class="testimonial_info" >
+                    <h5 style="font-size: x-large; color:white">Testimonial</h5>
+                    <small> </small>
+                </div>
+                <div class="testimonial_body">
+                    <p>
+                        It's a little intimidating being a woman and going to a scrapyard. But the staff at Scrap it are always helpful, friendly and professional. So, Girls if you need extra money and know a little bit about scrapping metal go to Scrap It. Their prices are good and they will help you through the entire process.                    </p>
+                </div>
+            </article> 
+
+
+            <article class="testimonials swiper-slide">
+                <div class="avatar">
+                    <img src="./image/seramic items old 5.webp">
+                </div>
+                <div class="testimonial_info">
+                    <h5 style="font-size: x-large; color:white">Testimonial</h5>
+                    
+                </div>
+                <div class="testimonial_body">
+                    <p>
+                        This company is well organized and pays well. I have been using them for over a decade and have never had any problems. We have a 40yd scrap it container on site. It is emptied any time we call and the drivers are courteous and pick up any loose material. The second street yard is wild but they pay and weigh with all your weights shown to you upon receipt. I have never had to question the weights all is legitimate. I am very happy with this company!                    </p>
+                </div>
+            </article>
+
+
+
+            <article class="testimonials swiper-slide">
+                <div class="avatar">
+                    <img src="./image/wood creativ.jpg">
+                </div>
+                <div class="testimonial_info">
+                    <h5 style="font-size: x-large; color:white">Testimonial</h5>
+                    
+                </div>
+                <div class="testimonial_body">
+                    <p>
+                        It's a little intimidating being a woman and going to a scrapyard. But the staff at Scrap it are always helpful, friendly and professional. So, Girls if you need extra money and know a little bit about scrapping metal go to Scrap It. Their prices are good and they will help you through the entire process.                    </p>
+                </div>
+            </article>
+
+
+
+            <article class="testimonials swiper-slide">
+                <div class="avatar">
+                    <img src="./image/steels creative.webp">
+                </div>
+                <div class="testimonial_info">
+                    <h5 style="font-size: x-large; color:white">Testimonial</h5>
+                </div>
+                <div class="testimonial_body">
+                    <p>
+                        This was my first time actually bringing in scrap personally. Let me tell you, ... my experience here was nothing but wonderful. Shout out to the guys in yard, they treated me so great in helping and guiding me threw the process. These guys are a 10 in my book. I plan on using this company many more times in the future.                    </p>
+                </div>
+            </article>
+
+
+
+            <article class="testimonials swiper-slide">
+                <div class="avatar">
+                    <img src="./image/c6.jpg">
+                </div>
+                <div class="testimonial_info">
+                    <h5 style="font-size: x-large; color:white">Testimonial</h5>
+                </div>
+                <div class="testimonial_body">
+                    <p>
+                        This is by far one of the best places that I’ve dealt with in the scrap industry for The 40 years that I’ve been in business for, they are the most courteous and helpful people in the business. Wonderful people great prices nice yard .                    </p>
+                </div>
+            </article>
+
+
+
+
+            <article class="testimonials swiper-slide">
+                <div class="avatar">
+                    <img src="./image/c-4.jpeg">
+                </div>
+                <div class="testimonial_info">
+                    <h5 style="font-size: x-large; color:white">Testimonial</h5>
+                </div>
+                <div class="testimonial_body">
+                    <p>
+                        This company is well organized and pays well. I have been using them for over a decade and have never had any problems. We have a 40yd scrap it container on site. It is emptied any time we call and the drivers are courteous and pick up any loose material. The second street yard is wild but they pay and weigh with all your weights shown to you upon receipt. I have never had to question the weights all is legitimate. I am very happy with this company!                    </p>
+                </div>
+            </article>
+
+
+
+            <article class="testimonials swiper-slide">
+                <div class="avatar">
+                    <img src="./image/carboard.jpg">
+                </div>
+                <div class="testimonial_info">
+                    <h5 style="font-size: x-large; color:white">Testimonial</h5>
+                </div>
+                <div class="testimonial_body">
+                    <p>
+                        I have scrapped a lot of copper lead and steel and they are very helpful and in my experience pay out more than the other scrap yards in the area.I’ve been to a lot of scrap yards, but I have to say they have the friendliest employees. They always make my drop quick and easy.                    </p>
+                </div>
+            </article>
+
+
+
+            <article class="testimonials swiper-slide">
+                <div class="avatar">
+                    <img src="./image/cerative 2.jpg">
+                </div>
+                <div class="testimonial_info">
+                    <h5 style="font-size: x-large; color:white">Testimonial</h5>
+                </div>
+                <div class="testimonial_body">
+                    <p>
+                        Awesome service...great prices...clean place..don't have to worry about flats. They're extremely fair and honest, they never try and hustle you like some of the other yards. They have the highest payout of all the yards in the area. Also, it's always in and out really fast never a long ordeal.         </p>
+                </div>
+            </article>
+
+            <article class="testimonials swiper-slide">
+                <div class="avatar">
+                    <img src="./image/cerative 3.jpg">
+                </div>
+                <div class="testimonial_info">
+                    <h5 style="font-size: x-large; color:white">Testimonial</h5>
+                </div>
+                <div class="testimonial_body">
+                    <p>
+                        This company is well organized and pays well. I have been using them for over a decade and have never had any problems. We have a 40yd scrap it container on site. It is emptied any time we call and the drivers are courteous and pick up any loose material. The second street yard is wild but they pay and weigh with all your weights shown to you upon receipt. I have never had to question the weights all is legitimate. I am very happy with this company!                    </p>
+                </div>
+            </article>
+
+
+
+
+            <article class="testimonials swiper-slide">
+                <div class="avatar">
+                    <img src="./image/cerative tyer 2.webp">
+                </div>
+                <div class="testimonial_info" >
+                    <h5 style="font-size: x-large; color:white">Testimonial</h5>
+                    <small> </small>
+                </div>
+                <div class="testimonial_body">
+                    <p>
+                        It's a little intimidating being a woman and going to a scrapyard. But the staff at Scrap it are always helpful, friendly and professional. So, Girls if you need extra money and know a little bit about scrapping metal go to Scrap It. Their prices are good and they will help you through the entire process.                    </p>
+                </div>
+            </article> 
+
+
+            <article class="testimonials swiper-slide">
+                <div class="avatar">
+                    <img src="./image/c1.jpeg">
+                </div>
+                <div class="testimonial_info">
+                    <h5 style="font-size: x-large; color:white">Testimonial</h5>
+                    
+                </div>
+                <div class="testimonial_body">
+                    <p>
+                        This company is well organized and pays well. I have been using them for over a decade and have never had any problems. We have a 40yd scrap it container on site. It is emptied any time we call and the drivers are courteous and pick up any loose material. The second street yard is wild but they pay and weigh with all your weights shown to you upon receipt. I have never had to question the weights all is legitimate. I am very happy with this company!                    </p>
+                </div>
+            </article>
+
+
+
+            <article class="testimonials swiper-slide">
+                <div class="avatar">
+                    <img src="./image/creative cloths.jpg">
+                </div>
+                <div class="testimonial_info">
+                    <h5 style="font-size: x-large; color:white">Testimonial</h5>
+                    
+                </div>
+                <div class="testimonial_body">
+                    <p>
+                        It's a little intimidating being a woman and going to a scrapyard. But the staff at Scrap it are always helpful, friendly and professional. So, Girls if you need extra money and know a little bit about scrapping metal go to Scrap It. Their prices are good and they will help you through the entire process.                    </p>
+                </div>
+            </article>
+
+
+
+            <article class="testimonials swiper-slide">
+                <div class="avatar">
+                    <img src="./image/vegetable peels.jpg">
+                </div>
+                <div class="testimonial_info">
+                    <h5 style="font-size: x-large; color:white">Testimonial</h5>
+                </div>
+                <div class="testimonial_body">
+                    <p>
+                        This was my first time actually bringing in scrap personally. Let me tell you, ... my experience here was nothing but wonderful. Shout out to the guys in yard, they treated me so great in helping and guiding me threw the process. These guys are a 10 in my book. I plan on using this company many more times in the future.                    </p>
+                </div>
+            </article>
+
+
+
+            <article class="testimonials swiper-slide">
+                <div class="avatar">
+                    <img src="./image/elctronics old 1.jpeg">
+                </div>
+                <div class="testimonial_info">
+                    <h5 style="font-size: x-large; color:white">Testimonial</h5>
+                </div>
+                <div class="testimonial_body">
+                    <p>
+                        This is by far one of the best places that I’ve dealt with in the scrap industry for The 40 years that I’ve been in business for, they are the most courteous and helpful people in the business. Wonderful people great prices nice yard .                    </p>
+                </div>
+            </article>
+
+
+
+
+            <article class="testimonials swiper-slide">
+                <div class="avatar">
+                    <img src="./image/main scrab bottle 7.jpg">
+                </div>
+                <div class="testimonial_info">
+                    <h5 style="font-size: x-large; color:white">Testimonial</h5>
+                </div>
+                <div class="testimonial_body">
+                    <p>
+                        This company is well organized and pays well. I have been using them for over a decade and have never had any problems. We have a 40yd scrap it container on site. It is emptied any time we call and the drivers are courteous and pick up any loose material. The second street yard is wild but they pay and weigh with all your weights shown to you upon receipt. I have never had to question the weights all is legitimate. I am very happy with this company!                    </p>
+                </div>
+            </article>
+
+
+            <article class="testimonials swiper-slide">
+                <div class="avatar">
+                    <img src="./image/1.jpeg">
+                </div>
+                <div class="testimonial_info" >
+                    <h5 style="font-size: x-large; color:white">Testimonial</h5>
+                    <small> </small>
+                </div>
+                <div class="testimonial_body">
+                    <p>
+                        It's a little intimidating being a woman and going to a scrapyard. But the staff at Scrap it are always helpful, friendly and professional. So, Girls if you need extra money and know a little bit about scrapping metal go to Scrap It. Their prices are good and they will help you through the entire process.                    </p>
+                </div>
+            </article> 
+
+
+            <article class="testimonials swiper-slide">
+                <div class="avatar">
+                    <img src="./image/seramic items old 5.webp">
+                </div>
+                <div class="testimonial_info">
+                    <h5 style="font-size: x-large; color:white">Testimonial</h5>
+                    
+                </div>
+                <div class="testimonial_body">
+                    <p>
+                        This company is well organized and pays well. I have been using them for over a decade and have never had any problems. We have a 40yd scrap it container on site. It is emptied any time we call and the drivers are courteous and pick up any loose material. The second street yard is wild but they pay and weigh with all your weights shown to you upon receipt. I have never had to question the weights all is legitimate. I am very happy with this company!                    </p>
+                </div>
+            </article>
+
+
+
+            <article class="testimonials swiper-slide">
+                <div class="avatar">
+                    <img src="./image/wood creativ.jpg">
+                </div>
+                <div class="testimonial_info">
+                    <h5 style="font-size: x-large; color:white">Testimonial</h5>
+                    
+                </div>
+                <div class="testimonial_body">
+                    <p>
+                        It's a little intimidating being a woman and going to a scrapyard. But the staff at Scrap it are always helpful, friendly and professional. So, Girls if you need extra money and know a little bit about scrapping metal go to Scrap It. Their prices are good and they will help you through the entire process.                    </p>
+                </div>
+            </article>
+
+
+
+            <article class="testimonials swiper-slide">
+                <div class="avatar">
+                    <img src="./image/steels creative.webp">
+                </div>
+                <div class="testimonial_info">
+                    <h5 style="font-size: x-large; color:white">Testimonial</h5>
+                </div>
+                <div class="testimonial_body">
+                    <p>
+                        This was my first time actually bringing in scrap personally. Let me tell you, ... my experience here was nothing but wonderful. Shout out to the guys in yard, they treated me so great in helping and guiding me threw the process. These guys are a 10 in my book. I plan on using this company many more times in the future.                    </p>
+                </div>
+            </article>
+
+
+
+            <article class="testimonials swiper-slide">
+                <div class="avatar">
+                    <img src="./image/c6.jpg">
+                </div>
+                <div class="testimonial_info">
+                    <h5 style="font-size: x-large; color:white">Testimonial</h5>
+                </div>
+                <div class="testimonial_body">
+                    <p>
+                        This is by far one of the best places that I’ve dealt with in the scrap industry for The 40 years that I’ve been in business for, they are the most courteous and helpful people in the business. Wonderful people great prices nice yard .                    </p>
+                </div>
+            </article>
+
+
+
+
+            <article class="testimonials swiper-slide">
+                <div class="avatar">
+                    <img src="./image/c-4.jpeg">
+                </div>
+                <div class="testimonial_info">
+                    <h5 style="font-size: x-large; color:white">Testimonial</h5>
+                </div>
+                <div class="testimonial_body">
+                    <p>
+                        This company is well organized and pays well. I have been using them for over a decade and have never had any problems. We have a 40yd scrap it container on site. It is emptied any time we call and the drivers are courteous and pick up any loose material. The second street yard is wild but they pay and weigh with all your weights shown to you upon receipt. I have never had to question the weights all is legitimate. I am very happy with this company!                    </p>
+                </div>
+            </article>
+
+
+
+            <article class="testimonials swiper-slide">
+                <div class="avatar">
+                    <img src="./image/carboard.jpg">
+                </div>
+                <div class="testimonial_info">
+                    <h5 style="font-size: x-large; color:white">Testimonial</h5>
+                </div>
+                <div class="testimonial_body">
+                    <p>
+                        I have scrapped a lot of copper lead and steel and they are very helpful and in my experience pay out more than the other scrap yards in the area.I’ve been to a lot of scrap yards, but I have to say they have the friendliest employees. They always make my drop quick and easy.                    </p>
+                </div>
+            </article>
+
+
+
+            <article class="testimonials swiper-slide">
+                <div class="avatar">
+                    <img src="./image/cerative 2.jpg">
+                </div>
+                <div class="testimonial_info">
+                    <h5 style="font-size: x-large; color:white">Testimonial</h5>
+                </div>
+                <div class="testimonial_body">
+                    <p>
+                        Awesome service...great prices...clean place..don't have to worry about flats. They're extremely fair and honest, they never try and hustle you like some of the other yards. They have the highest payout of all the yards in the area. Also, it's always in and out really fast never a long ordeal.         </p>
+                </div>
+            </article>
+
+            <article class="testimonials swiper-slide">
+                <div class="avatar">
+                    <img src="./image/cerative 3.jpg">
+                </div>
+                <div class="testimonial_info">
+                    <h5 style="font-size: x-large; color:white">Testimonial</h5>
+                </div>
+                <div class="testimonial_body">
+                    <p>
+                        This company is well organized and pays well. I have been using them for over a decade and have never had any problems. We have a 40yd scrap it container on site. It is emptied any time we call and the drivers are courteous and pick up any loose material. The second street yard is wild but they pay and weigh with all your weights shown to you upon receipt. I have never had to question the weights all is legitimate. I am very happy with this company!                    </p>
+                </div>
+            </article>
+
+
+
+
+            <article class="testimonials swiper-slide">
+                <div class="avatar">
+                    <img src="./image/cerative tyer 2.webp">
+                </div>
+                <div class="testimonial_info" >
+                    <h5 style="font-size: x-large; color:white">Testimonial</h5>
+                    <small> </small>
+                </div>
+                <div class="testimonial_body">
+                    <p>
+                        It's a little intimidating being a woman and going to a scrapyard. But the staff at Scrap it are always helpful, friendly and professional. So, Girls if you need extra money and know a little bit about scrapping metal go to Scrap It. Their prices are good and they will help you through the entire process.                    </p>
+                </div>
+            </article> 
+
+
+            <article class="testimonials swiper-slide">
+                <div class="avatar">
+                    <img src="./image/c1.jpeg">
+                </div>
+                <div class="testimonial_info">
+                    <h5 style="font-size: x-large; color:white">Testimonial</h5>
+                    
+                </div>
+                <div class="testimonial_body">
+                    <p>
+                        This company is well organized and pays well. I have been using them for over a decade and have never had any problems. We have a 40yd scrap it container on site. It is emptied any time we call and the drivers are courteous and pick up any loose material. The second street yard is wild but they pay and weigh with all your weights shown to you upon receipt. I have never had to question the weights all is legitimate. I am very happy with this company!                    </p>
+                </div>
+            </article>
+
+
+
+            <article class="testimonials swiper-slide">
+                <div class="avatar">
+                    <img src="./image/creative cloths.jpg">
+                </div>
+                <div class="testimonial_info">
+                    <h5 style="font-size: x-large; color:white">Testimonial</h5>
+                    
+                </div>
+                <div class="testimonial_body">
+                    <p>
+                        It's a little intimidating being a woman and going to a scrapyard. But the staff at Scrap it are always helpful, friendly and professional. So, Girls if you need extra money and know a little bit about scrapping metal go to Scrap It. Their prices are good and they will help you through the entire process.                    </p>
+                </div>
+            </article>
+
+
+
+            <article class="testimonials swiper-slide">
+                <div class="avatar">
+                    <img src="./image/vegetable peels.jpg">
+                </div>
+                <div class="testimonial_info">
+                    <h5 style="font-size: x-large; color:white">Testimonial</h5>
+                </div>
+                <div class="testimonial_body">
+                    <p>
+                        This was my first time actually bringing in scrap personally. Let me tell you, ... my experience here was nothing but wonderful. Shout out to the guys in yard, they treated me so great in helping and guiding me threw the process. These guys are a 10 in my book. I plan on using this company many more times in the future.                    </p>
+                </div>
+            </article>
+
+
+
+            <article class="testimonials swiper-slide">
+                <div class="avatar">
+                    <img src="./image/elctronics old 1.jpeg">
+                </div>
+                <div class="testimonial_info">
+                    <h5 style="font-size: x-large; color:white">Testimonial</h5>
+                </div>
+                <div class="testimonial_body">
+                    <p>
+                        This is by far one of the best places that I’ve dealt with in the scrap industry for The 40 years that I’ve been in business for, they are the most courteous and helpful people in the business. Wonderful people great prices nice yard .                    </p>
+                </div>
+            </article>
+
+
+
+
+            <article class="testimonials swiper-slide">
+                <div class="avatar">
+                    <img src="./image/main scrab bottle 7.jpg">
+                </div>
+                <div class="testimonial_info">
+                    <h5 style="font-size: x-large; color:white">Testimonial</h5>
+                </div>
+                <div class="testimonial_body">
+                    <p>
+                        This company is well organized and pays well. I have been using them for over a decade and have never had any problems. We have a 40yd scrap it container on site. It is emptied any time we call and the drivers are courteous and pick up any loose material. The second street yard is wild but they pay and weigh with all your weights shown to you upon receipt. I have never had to question the weights all is legitimate. I am very happy with this company!                    </p>
+                </div>
+            </article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+        <div class="swiper-pagination"></div>
+    </section>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="services">
+
+        <h1 class="heading" style="color: #fff;">Blogs And Updates</h1>
+    
+        <div class="box-container">
+    
+           
+            <div class="box">
+                <h3>The Anatomy</h3>
+                <p>
+                    Stepping into a scrape yard reveals a mesmerizing labyrinth of piled cars, towering heaps of metal, and endless rows of salvageable items. While the atmosphere may seem chaotic at first glance, these yards operate with a carefully orchestrated system.
+                </p>    
+            </div>
+    
+            <div class="box">
+                <h3>Recycling and Sustainability </h3>
+                <p>
+                    Scrape yards play a vital role in the global recycling ecosystem, promoting environmental scavenging . By collecting, sorting, and processing scrap materials, these yards reduce the need for raw materials.                 </p>           
+            </div>
+
+            <div class="box">
+                <h3>Scavengers and Collectors</h3>
+                <p>
+                    Scrape yards have scavenging and collecting developed a unique subculture that revolves around scavenging and collecting  exploration, restoration. These spaces attract individuals with a penchant for exploration, restoration, and repurposing.                </p>    
+            </div>
+    
+            <div class="box">
+                <h3>The Origins and Evolution </h3>
+                <p>
+                    To truly appreciate scrape yards, it is essential . The rise of the automotive a significant role in the growth of scrape yards, as the demand for spare parts and recycled materials soared. Today, modern scrape yards have evolved into organized facilities.
+                </p>           
+            </div>
+
+            
+            <div class="box">
+                <h3>Artistic Inspiration</h3>
+                <p>
+                    Beyond their practical and environmental significance, scrape yards have inspired artists and creatives worldwide. For many, these yards serve as a muse, offering  a wealth of raw materials environmental significance, scrape yards have.            </div>
+    
+            <div class="box">
+                <h3>Challenges and Innovations</h3>
+                <p>
+                    While scrape yards contribute significantly to recycling efforts. One of the key issues is managing hazardous materials found in various discarded items, such as chemicals in electronics or fluids in vehicles.                </p>           
+            </div>
+
+
+        </div>
+    </section>
+
+   
+
+
+
+
+
+
+    <footer class="footer">
+        <section class="flex">
+            <div class="box">
+                <a href="#"><i class="fas fa-phone"></i><span>9198630700</span></a>
+                <a href="mailto:myscrapyard0@gmail.com"><i class="fas fa-envelope"></i><span>myscrapyard0@gmail.com</span></a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i><span>Kanpur, India</span></a>
+    
+            </div>
+    
+            <div class="box">
+                <a href="index.html"><span>Home</span></a>
+                <a href="about.html"><span>About</span></a>
+                <a href="contact.html"><span>Contact</span></a>
+                <a href="listings.html"><span>All Listings</span></a>
+                <a href="search.html"><span>Saved Scarp</span></a>
+    
+            </div>
+    
+            <div class="box">
+                <a href="#"><span>Facebook</span><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><span>Twitter</span><i class="fab fa-twitter"></i></a>
+                <a href="#"><span>Linkedin</span><i class="fab fa-linkedin"></i></a>
+                <a href="#"><span>Instagram</span><i class="fab fa-instagram"></i></a>
+    
+            </div>
+        </section>
+    
+        <div class="credit">&copy; copyright @ 2024 by <span>MyScrapyard</span>| all rights reserved</div>
+    </footer>
+
+
+    
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+
+        let menu = document.querySelector('.header .menu');
+  
+           document.querySelector('#menu-btn').onclick = () =>{
+            menu.classList.toggle('active');
+          }
+  
+        window.onscroll = () =>{
+         menu.classList.remove('active');
+         }
+  
+        document.querySelectorAll('.view-property .details .thumb .small-images img').forEach(images =>{
+         images.onclick = () =>{
+            src = images.getAttribute('src');
+            document.querySelector('.view-property .details .thumb .big-image img').src = src;
+         }
+       });
+      </script>
+
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          centeredSlides: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+
+      
+      <script>
+        var slideIndex = 0;
+        carousel();
+
+        function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+        }
+       slideIndex++;
+       if (slideIndex > x.length) {slideIndex = 1}
+       x[slideIndex-1].style.display = "block";
+       setTimeout(carousel, 2000); // Change image every 2 seconds
+       }
+    </script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          
+        });
+      </script>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+        
+
+
+
+
+    
+
+    

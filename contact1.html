@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact-form</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+
+
+   
+      <div class="wrapper">
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=poppins:wght@400;500;600&display=swap');
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: "Poppins", sans-serif;
+            }
+            body{
+                display: flex;
+                padding: 0 10px;
+                min-height: 100vh;
+                align-items: center;
+                justify-content: center;
+                background: orangered;
+            }
+
+            .wrapper{
+                width: 720pxx;
+                background: #fff;
+                border-radius: 5px;
+            }
+
+            .wrapper header{
+                font-size: 22px;
+                font-weight: 600;
+                padding: 20px 30px;
+                border-bottom: 1px solid #bfbfbf;
+            }
+            .wrapper form{
+                margin: 35px 30px;
+            }
+            form .dbl-field{
+                display: flex;
+                align-items: center;
+                margin-bottom: 25px;
+                justify-content: space-between;
+            }
+            .dbl-field .field{
+                height: 50px;
+                position: relative;
+                width: calc(100% / 2 - 13px);
+            }
+            form .field input,
+            form .message textarea{
+                height: 100%;
+                width: 100%;
+                outline: none;
+                padding: 0 18px 0 48px;
+                font-size: 16px;
+                border-radius: 5px;
+                border: 1px solid #bfbfbf;
+            }
+            form .field input::placeholder,
+            form .message textarea::placeholder{ 
+                color: #bfbfbf;
+            }
+
+            form .field input:focus,
+            form .message textarea:focus{
+                border: 2px solid orangered;
+            }
+            .wrapper .field i{
+                position: absolute;
+                left: 18px;
+                top: 50%;
+                color: #bfbfbf;
+                font-size: 17px;
+                pointer-events: none;
+                transform: translateY(-50%);
+            }
+            form .field input:focus ~ i{
+                color: orangered;
+            }
+            form .message{
+                position: relative;
+            }
+            form .message i{
+                top: 20px;
+                font-size: 20px;
+            }
+
+            form .message textarea{
+                min-width: 100%;
+                max-width: 100%;
+                max-height: 300px;
+                min-height: 120px;
+                padding: 15px 20px 0 48px;
+            }
+            form .button-area{
+                margin: 25px 0;
+                display: flex;
+                align-items: center;
+
+            }
+            .button-area button{
+                font-size: 18px;
+                border: none;
+                cursor: pointer;
+                color: #fff;
+                border-radius: 5px;
+                background: orangered;
+                padding: 13px 25px;
+            }
+            .button-area span{
+                color: orangered;
+                margin-left: 30px;
+                display: none;
+            }
+
+            @media(max-width: 600px){
+                .wrapper header{
+                    text-align: center;
+                }
+                form .dbl-field{
+                    margin-bottom: 0px;
+                    flex-direction: column;
+                }
+                .dbl-field .field{
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+                form .message textarea{
+                    resize: none;
+                }
+                form .button-area{
+                    flex-direction: column;
+                }
+                .button-area button{
+                    width: 100%;
+                }
+                .button-area span{
+                    text-align: center;
+                    margin: 20px 0;
+                }
+            }
+        </style>
+          <header>Get IN Touch</header>
+          <header>We are always ready to serve you!</header>
+          <form action="#">
+            <div class="dbl-field">
+             <div class="field">
+                <input type="text" name="name" placeholder="Enter your name">
+                <i class="fas fa-user"></i>
+             </div>
+            
+             <div class="field">
+                <input type="text" name="email" placeholder="Enter your email">
+
+                <i class="fas fa-envelope"></i>
+
+             </div>
+            </div>
+
+            <div class="dbl-field">
+                <div class="field">
+                   <input type="text" name="phone" placeholder="Enter your Phone">
+                   <i class="fas fa-phone-alt"></i>
+                </div>
+                <div class="field">
+                   <input type="text" name="website" placeholder="Enter your website">
+   
+                   <i class="fas fa-globe"></i>
+   
+                </div>
+            </div>
+               <div class="message">
+                <textarea placeholder="Write your message" name="message"></textarea>
+                <i class="material-icons">message</i>
+               </div>
+               <div class="button-area">
+                <button type="submit">Send Message</button>
+                <span>Sending your message...</span>
+               </div>
+          </form>
+      </div>
+    
+
+    </body>
+    <script src="./script.js"></script>
+    <script>
+        const form = document.querySelector("form"),
+        statusTet = form.querySelector(".button-area span");
+
+        form.onsubmit = (e)=>{
+            e.preventDefault();
+            statusTxt.style.display = "block";
+
+            let xhr = new XMLHttpRequest();
+            xhr.open("POST", "message.php", true);
+            xhr.onload = ()=>{
+                if(xhr.readyState == 4 && xhr.ststus == 200){
+                    let response = xhr.response;
+                    console.log(response);
+                    statusTxt.innerText = response;
+                }
+
+            }
+            let formData = new FormData(form);
+            xhr.send(formData);
+        }
+    </script>
+
+</html>
